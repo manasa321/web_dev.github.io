@@ -34,6 +34,23 @@
             <p>
                 I am Manasa, a graduate of IIT Madras. I am currently working as a data engineer at Jio Platforms Limited, Mumbai. I enjoy coding and have hands-on experience in Python, C, and C++. I am passionate about machine learning and finance and would love to explore more in these fields.
             </p>
+            <div class="container">
+                <form action="/generate" method="post">
+                    <label for="prompt">Enter Prompt:</label><br>
+                    <input type="text" id="prompt" name="prompt" required/><br><br>
+                    <button type="submit" style="color:black">Generate Output</button>
+                </form>
+
+                {% if user_input %}
+                <hr>
+                <h1>Processed Output</h1>
+                <h2>Input:</h2>
+                <p>{{ user_input }}</p>
+                <h2>Processed Output:</h2>
+                <p>{{ processed_output }}</p>
+                {% endif %}
+
+            </div>
         </div>
     </div>
 </section>
