@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style1.css">
+    <title>Manasa's Portfolio</title>
+</head>
+<body>
+<div class="welcome">
+    <h1>Welcome to my webPage</h1>
+</div>
+<section id="auth" style="align:center;">
+    <div class="square-box">
+        <p style="font-weight:bolder; font-size:16px;">Sign In</p>
+        <p id="enter-user" class="enter">Enter mailId:</p>
+        <div class="container">
+            <input type="text" name="name" id="user" placeholder="Username" required/>
+        </div>
+        <p class="enter">Enter password:</p>
+        <div class="container">
+            <input type="password" name="name" id="password" placeholder="Password" required/>
+            <div id ="Processing"></div>
+        </div>
+        <hr>
+        <br>
+        <div id="submit" class="button">
+            <button onclick="myFunction()">Submit</button>
+        </div>
+    </div>
+</section>
+<section id="sec1" class="hidden">
+    <div class="about-box">
+        <div class="bio">
+            <p>
+                I am Manasa, a graduate of IIT Madras. I am currently working as a data engineer at Jio Platforms Limited, Mumbai. I enjoy coding and have hands-on experience in Python, C, and C++. I am passionate about machine learning and finance and would love to explore more in these fields.
+            </p>
+        </div>
+    </div>
+</section>
+</body>
+<script src="script.js"></script>
+</html>

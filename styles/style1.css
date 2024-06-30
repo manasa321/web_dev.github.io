@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+.welcome {
+    animation: colorTransition 5s infinite;
+    font-weight: 600;
+    text-align: center;
+}
+
+@keyframes colorTransition {
+    0% {
+        color: green;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+}
+
+.bio {
+    color: blue;
+    font-style: italic;
+    text-align: left;
+}
+
+.enter {
+    color: blue;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.square-box {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align: center;
+    width: 500px; /* Adjust the width to your desired size */
+    height: 300px; /* Equal to width to create a square */
+    border: 2px solid blue; /* Border for the square box */
+    display: flex; /* Use flexbox for flexible layout */
+    flex-direction: column;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: #D3D3D3;
+}
+
+.about-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align: center;
+    width: 1000px;
+    height: 800px;
+    background-color: light-blue;
+    border: 2px solid #000; /* Border for the square box */
+    display: flex; /* Use flexbox for flexible layout */
+    flex-direction: column;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Ce*/
+}
+
+.container {
+    border-width:2px;
+    background-color: blue; /* Background color for containers */
+    text-align: center; /* Center text or content inside each container */
+    margin: 1px; /* Margin between containers */
+}
+
+button {
+    color: white;
+    text-align: center; /* Use text-align instead of align for centering text */
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: grey;
+    border: none; /* Adding a border none to remove default border */
+    display: inline-block; /* Ensures it behaves as an inline-block element */
+    text-decoration: none; /* Remove default underline on links */
+}
+
+button:hover {
+    background-color: green; /* Darker grey when hovered */
+    color: white; /* White text when hovered */
+}
+
+.hidden {
+    display: none;
+}
